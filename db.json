@@ -8,8 +8,9 @@
     },
     {
       "id": "2",
-      "title": "another title",
-      "views": 200
+      "title": "Halo",
+      "views": "200",
+      "isDeleted": false
     },
     {
       "id": "3",
@@ -35,6 +36,12 @@
       "title": "arap",
       "views": "10",
       "id": "7"
+    },
+    {
+      "id": "8",
+      "title": "kaka",
+      "views": "10000",
+      "isDeleted": false
     }
   ],
   "comments": [
@@ -45,8 +52,15 @@
     },
     {
       "id": "2",
-      "text": "another comment about post 1",
-      "postId": "1"
+      "text": "hola",
+      "postId": "2",
+      "isDeleted": false
+    },
+    {
+      "id": "3",
+      "text": "keke",
+      "postId": "3",
+      "isDeleted": false
     }
   ],
   "profile": {

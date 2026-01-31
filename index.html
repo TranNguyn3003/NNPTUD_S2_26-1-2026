@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Dashboard - Sản phẩm</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Tìm kiếm theo tên sản phẩm..." />
+        </div>
+        <div class="sort-controls">
+            <span class="sort-label">Sắp xếp:</span>
+            <button type="button" id="sort-price-asc" class="sort-btn">Giá tăng dần</button>
+            <button type="button" id="sort-price-desc" class="sort-btn">Giá giảm dần</button>
+            <button type="button" id="sort-name-asc" class="sort-btn">Tên A → Z</button>
+            <button type="button" id="sort-name-desc" class="sort-btn">Tên Z → A</button>
+        </div>
+        <div id="loading">Đang tải...</div>
+        <div id="error" class="hidden"></div>
+        <div class="pagination-controls">
+            <label>
+                Hiển thị
+                <select id="per-page" aria-label="Số dòng mỗi trang">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                </select>
+                mỗi trang
+            </label>
+            <span id="pagination-info" class="pagination-info"></span>
+        </div>
+        <div class="table-wrapper">
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Danh mục</th>
+                    </tr>
+                </thead>
+                <tbody id="products-body">
+                </tbody>
+            </table>
+        </div>
+        <div id="pagination-buttons" class="pagination-buttons"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

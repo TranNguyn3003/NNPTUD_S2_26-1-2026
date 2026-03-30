@@ -75,9 +75,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
   var socket;
-  socket.on('welcome', (msg) => {
-    alert('em chao anh' + msg)
-  })
+
   function loadUser() {
     let jwt = document.getElementById('jwt_txt').value;
     if (jwt) {
@@ -87,6 +85,9 @@
         }
       });
     }
+    socket.on('welcome', (msg) => {
+      alert('em chao anh' + msg)
+    })
     return false;
   }
 </script>
